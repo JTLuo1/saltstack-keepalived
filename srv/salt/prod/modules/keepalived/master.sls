@@ -4,7 +4,7 @@ include:
 keepalived.service:
   service.running:
     - enable: true
-    - reload:
+    - reload: true
     - require:
       - pkg: download-keepalived
     - watch:
